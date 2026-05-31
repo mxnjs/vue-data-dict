@@ -90,7 +90,7 @@ export default class DataDict {
     }
 
     const opts = recursiveMerge({}, DEFAULT_DICT_OPTIONS, options)
-    const ps = opts.types.map(t => this.register(t))
+    const ps = opts.types.map(t => this.register(t).wait())
     return Promise.all(ps)
   }
 

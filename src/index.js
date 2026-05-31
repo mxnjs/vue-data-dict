@@ -8,7 +8,8 @@ import install from './lib/install'
  */
 export default {
   name: 'vue-data-dict',
+  version: '2.1.2',
+  install,
   convertData,
   DictData,
-  install,
 }

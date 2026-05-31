@@ -49,6 +49,10 @@ export const options = {
        */
       valueField: 'value',
       /**
+       * 懒加载，开启后字典初始化后，不会立即加载数据，需调用load方法触发加载
+       */
+      lazy: false,
+      /**
        * 向上查找，开启后字典数据加载时，会优先从祖先组件中查找同类型字典
        */
       lookup: false,
